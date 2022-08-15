@@ -8,6 +8,15 @@
 
 <svelte:window bind:scrollY bind:innerWidth />
 
+<svelte:head>
+    <title>Indigo Development | Home</title>
+    <meta name="description" content="Welcome to Indigo Development. Creators of Rockwall and beautiful frontends">
+    <meta property="og:title" value="Indigo Development | Home">
+    <meta property="og:image" value="indigo.png">
+    <meta property="og:description" value="Welcome to Indigo Development. Creators of Rockwall and beautiful frontends">
+    <meta property="og:url" value="https://1ndiigo.github.io">
+</svelte:head>
+
 <main>
     <section
         class="flex items-center justify-center w-full h-[72rem] md:h-screen p-6 transition-all duration-500  {scrollY <=
@@ -50,7 +59,7 @@
             : 'bg-indigo-600'}">
             <!--"hill-rockslide" by Font Awesome 6 is licensed under CC BY 4.0-->
             <img
-                src="hill-rockslide.svg"
+                src="icons/hill-rockslide.svg"
                 alt="Hill Rockslide by Font Awesome 6"
                 class="invert select-none h-full p-8 self-center justify-self-center"
             />
@@ -64,11 +73,11 @@
                 <div class="flex items-center justify-between w-20">
                     <a href="https://github.com/1ndiigo/Rockwall">
                         <!--"github" by Font Awesome 6 is licensed under CC BY 4.0-->
-                        <img src="github.svg" alt="GitHub logo" class="invert select-none h-7 mt-6" />
+                        <img src="icons/github.svg" alt="GitHub logo" class="invert select-none h-7 mt-6" />
                     </a>
                     <a href="https://www.spigotmc.org/resources/rockwall.103709/">
                         <!--"faucet-drip" by Font Awesome 6 is licensed under CC BY 4.0-->
-                        <img src="spigot.svg" alt="Leaky spigot" class="invert select-none h-7 mt-6" />
+                        <img src="icons/spigot.svg" alt="Leaky spigot" class="invert select-none h-7 mt-6" />
                     </a>
                 </div>
             </div>

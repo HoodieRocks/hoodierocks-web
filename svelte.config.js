@@ -14,11 +14,12 @@ const config = {
   kit: {
     adapter: adapter({
       pages: 'dist',
-      assets: 'dist'
+      assets: 'dist',
+      fallback: null
     }),
     prerender: {
       default: true
-    }
+    },
   },
 };
 
