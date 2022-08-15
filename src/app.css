@@ -1,0 +1,34 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    text-rendering: optimizeLegibility;
+    image-rendering: optimizeSpeed;
+    shape-rendering: geometricPrecision;
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    @apply font-medium text-base md:text-lg;
+}
+
+.animate-blink {
+    animation: blink 750ms linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
