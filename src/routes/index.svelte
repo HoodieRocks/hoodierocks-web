@@ -12,7 +12,7 @@
     <title>Indigo Development | Home</title>
     <meta name="description" content="Welcome to Indigo Development. Creators of Rockwall and beautiful frontends">
     <meta property="og:title" value="Indigo Development | Home">
-    <meta property="og:image" value="indigo.png">
+    <meta name="og:image" content="https://1ndiigo.github.io/indigo.png">
     <meta property="og:description" value="Welcome to Indigo Development. Creators of Rockwall and beautiful frontends">
     <meta property="og:url" value="https://1ndiigo.github.io">
 </svelte:head>
@@ -63,7 +63,7 @@
                 alt="Hill Rockslide by Font Awesome 6"
                 class="invert select-none h-full p-8 self-center justify-self-center"
             />
-            <div id="projects" class="col-span-2 xl:col-span-1 scroll-m-96">
+            <div id="projects" class="col-span-3 xl:col-span-1 scroll-m-96">
                 <h4 class="text-neutral-200 font-bold text-4xl mb-4">Rockwall</h4>
                 <p class="text-neutral-200 font-light text-lg text-opacity-60">
                     Rockwall is a highly configurable, feature-rich chat Bukkit plugin. Rockwall has
