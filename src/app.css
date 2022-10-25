@@ -19,6 +19,10 @@
     animation-iteration-count: infinite;
 }
 
+.fontz {
+    font-family: 'Fira Code' monospace;
+}
+
 @keyframes blink {
     0% {
         opacity: 0;

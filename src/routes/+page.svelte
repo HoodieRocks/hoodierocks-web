@@ -19,7 +19,7 @@
 
 <main>
     <section
-        class="flex items-center justify-center w-full h-[72rem] md:h-screen p-6 transition-all duration-500  {scrollY <=
+        class="flex items-center justify-center w-full h-screen p-6 transition-all duration-500  {scrollY <=
         200
             ? 'bg-neutral-200'
             : 'bg-indigo-600'}"
@@ -41,7 +41,7 @@
         </div>
     </section>
     <section
-        class="w-full h-screen transition-all duration-500 {scrollY <= 200
+        class="w-full h-[96rem] transition-all duration-500 {scrollY <= 200
             ? 'bg-neutral-200'
             : 'bg-indigo-600'}"
     >
@@ -54,39 +54,38 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-4 grid-rows-6 gap-3 transition-all duration-500 {scrollY <= 200
+        <div class="grid grid-cols-4 grid-rows-6 gap-8 transition-all duration-500 px-8 {scrollY <= 200
             ? 'bg-neutral-200'
             : 'bg-indigo-600'}">
             <!--"hill-rockslide" by Font Awesome 6 is licensed under CC BY 4.0-->
             <img
                 src="icons/hill-rockslide.svg"
                 alt="Hill Rockslide by Font Awesome 6"
-                class="invert select-none h-full p-8 self-center justify-self-center"
+                class="invert select-none h-full self-center justify-self-center"
             />
-            <div id="projects" class="col-span-3 xl:col-span-1 scroll-m-96">
-                <h4 class="text-neutral-200 font-bold text-4xl mb-4">Rockwall</h4>
-                <p class="text-neutral-200 font-light text-lg text-opacity-60">
+            <div id="projects" class="col-span-3 xl:col-span-2 scroll-m-96">
+                <h4 class="text-neutral-200 font-bold text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4">Rockwall</h4>
+                <p class="text-neutral-200 font-light text-sm md:text-base lg:text-lg text-opacity-60 clamp-3">
                     Rockwall is a highly configurable, feature-rich chat Bukkit plugin. Rockwall has
                     features some similar chat plugins do not such as parties, @ mentions or emojis
                     like :shrug:
                 </p>
-                <div class="flex items-center justify-between w-20">
+                <div class="flex items-center justify-between w-16 md:w-20">
                     <a href="https://github.com/1ndiigo/Rockwall">
                         <!--"github" by Font Awesome 6 is licensed under CC BY 4.0-->
-                        <img src="icons/github.svg" alt="GitHub logo" class="invert select-none h-7 mt-6" />
+                        <img src="icons/github.svg" alt="GitHub logo" class="invert select-none h-6 md:h-7 mt-6" />
                     </a>
                     <a href="https://www.spigotmc.org/resources/rockwall.103709/">
                         <!--"faucet-drip" by Font Awesome 6 is licensed under CC BY 4.0-->
-                        <img src="icons/spigot.svg" alt="Leaky spigot" class="invert select-none h-7 mt-6" />
+                        <img src="icons/spigot.svg" alt="Leaky spigot" class="invert select-none h-6 md:h-7 mt-6" />
                     </a>
                 </div>
             </div>
-            <div class="col-span-2"/>
-            <div class="col-span-4"></div>
-            {#if innerWidth >= 768}
-                <div/>
+            {#if innerWidth < 768}
+                <div class="col-span-2"/>
             {/if}
-            <p class="col-span-2 text-6xl text-neutral-200 w-full text-center">More projects will be added soon!</p>
+            <div class="col-span-4"></div>
+            <p class="col-span-4 text-4xl md:text-5xl lg:text-6xl text-neutral-200 w-full text-center">More projects will be added soon!</p>
         </div>
     </section>
     <GoToTop />
