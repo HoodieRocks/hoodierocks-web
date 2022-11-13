@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Navigation from '../components/Navigation.svelte';
 	import '../app.css';
-	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 
 	let scroll = 0;
