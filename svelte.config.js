@@ -16,7 +16,6 @@ const config = {
 			pages: 'dist',
 			assets: 'dist',
 			fallback: null,
-			strict: false
 		}),
 	},
 };
