@@ -17,6 +17,11 @@
 		name="description"
 		content="Hi, my name is Indigo. No that's not my real name, it's an alias, I also go by Cobblestone. I am a frontend developer designing beautiful and featureful UIs like this one." />
 	<meta name="keywords" content="development dev indigo frontend developer" />
+	<meta property="og:title" content="Indigo Development | Home">
+	<meta property="og:description" content="Hello, and welcome ot my website">
+	<meta property="og:image" content="https://hoodierocks.github.io/indigo.png">
+	<meta property="og:url" content="https://hoodierocks.github.io/">
+	<meta property="og:type" content="website">
 </svelte:head>
 
 <main class="bg-neutral-800">

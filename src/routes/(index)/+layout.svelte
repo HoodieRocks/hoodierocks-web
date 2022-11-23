@@ -2,7 +2,7 @@
 	export const prerender = true
 	
 	import Navigation from '$components/Navigation.svelte';
-	import '../app.css';
+	import '../../app.css';
 	import { browser } from '$app/environment';
 	import Footer from '$components/Footer.svelte';
 
