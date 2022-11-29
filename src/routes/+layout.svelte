@@ -2,9 +2,8 @@
 	export const prerender = true
 	
 	import Navigation from '$components/Navigation.svelte';
-	import '../../app.css';
+	import '../app.css';
 	import { browser } from '$app/environment';
-	import Footer from '$components/Footer.svelte';
 
 	let scroll = 0;
 	let innerHeight = 0
@@ -15,7 +14,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link
-		async
 		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&display=swap"
 		rel="stylesheet"
 	/>
@@ -29,4 +27,6 @@
 
 <slot />
 
-<Footer/>
+{#await import('$components/Footer.svelte') then Module}
+	<Module.default/>
+{/await}

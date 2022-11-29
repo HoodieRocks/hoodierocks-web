@@ -10,7 +10,7 @@
 
 <nav class="w-full {clickedBars ? 'bg-indigo-600' : 'bg-white bg-opacity-5'} fixed py-8 md:py-3 z-50 transition-all" transition:slide={{ duration: 250 }}>
 	<div class="flex justify-between items-center {clickedBars ? 'h-screen' : 'h-auto'} md:h-auto transition-all">
-        <img src={clickedBars ? "indigo-white.svg" : "indigo.svg"} alt="Indigo logo" class="h-8 cursor-pointer" on:click={() => goto('/')} on:keypress={(code) => code.key == "h" ? goto('/') : null}>
+        <a href="/"><img src={clickedBars ? "indigo-white.svg" : "indigo.svg"} alt="Indigo logo" class="h-8 cursor-pointer" height="32" width="128"></a>
 		<div class="flex flex-col md:flex-row justify-between items-center w-2/5 mx-8">
             {#if width > 768 || clickedBars}
                 <a href="/#about" class="text-neutral-200 font-medium">About</a>

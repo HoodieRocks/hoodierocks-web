@@ -18,10 +18,10 @@
 		content="Hi, my name is Indigo. No that's not my real name, it's an alias, I also go by Cobblestone. I am a frontend developer designing beautiful and featureful UIs like this one." />
 	<meta name="keywords" content="development dev indigo frontend developer" />
 	<meta property="og:title" content="Indigo Development | Home">
-	<meta property="og:description" content="Hello, and welcome ot my website">
+	<meta property="og:description" content="Hi, my name is Indigo. No that's not my real name, it's an alias, I also go by Cobblestone. I am a frontend developer designing beautiful and featureful UIs like this one.">
 	<meta property="og:image" content="https://hoodierocks.github.io/indigo.png">
 	<meta property="og:url" content="https://hoodierocks.github.io/">
-	<meta property="og:type" content="website">
+	<meta property="og:type" content="website" />
 </svelte:head>
 
 <main class="bg-neutral-800">
@@ -29,7 +29,7 @@
 		{#if visible}
 			<div
 				in:fade={{ delay: 1000 }}
-				class="w-screen sm:w-1/3 md:w-1/2 border-2 border-indigo-400 h-1/2 absolute z-0 dotted resize-x" />
+				class="w-screen sm:w-1/3 md:w-1/2 border-2 border-indigo-400 h-2/3 absolute z-0 dotted resize-x" />
 			<h1
 				class="font-black text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] text-white text-center z-20"
 				in:fly={{ x: 100, duration: 750, delay: 200 }}>
@@ -39,9 +39,9 @@
 					on:focus={() => (mousingOverHand = true)}
 					src="waving-hand.webp"
 					alt="waving hand emoji"
-					class="h-[4.5rem] sm:h-24 md:h-32 lg:h-40 inline-block align-text-top z-2 {mousingOverHand
+					class="h-[4.5rem] sm:h-24 md:h-32 lg:h-40 w-auto inline-block align-text-top z-2 {mousingOverHand
 						? 'shake'
-						: ''}" />
+						: ''}"  height="72" width="72"/>
 			</h1>
 			<p
 				class="font-light text-xl sm:text-2xl md:text-3xl text-white text-opacity-60 text-center z-20"
