@@ -3,7 +3,6 @@
 	
 	import Navigation from '$components/Navigation.svelte';
 	import "../app.postcss";
-	import { browser } from '$app/environment';
 
 	let scroll = 0;
 	let innerWidth = 0;
@@ -17,12 +16,10 @@
 
 <svelte:window bind:scrollY="{scroll}" bind:innerWidth={innerWidth}></svelte:window>
 
-{#if innerWidth < 768 || scroll > 200}
-	<Navigation></Navigation>
-{/if}
+<Navigation/>
 
-<slot></slot>
+<slot/>
 
 {#await import('$components/Footer.svelte') then Module}
-	<Module.default></Module.default>
+	<Module.default/>
 {/await}
