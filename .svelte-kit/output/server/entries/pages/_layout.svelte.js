@@ -17,7 +17,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 
-${`${validate_component(Navigation, "Navigation").$$render($$result, {}, {}, {})}`}
+${validate_component(Navigation, "Navigation").$$render($$result, {}, {}, {})}
 
 ${slots.default ? slots.default({}) : ``}
 
