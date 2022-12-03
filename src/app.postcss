@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+	image-rendering: optimizeSpeed;
+	shape-rendering: geometricPrecision;
+}
+
+.dotted {
+	background-image: radial-gradient(circle at 1px 1px, theme(colors.indigo.400) 1px, transparent 0);
+	background-size: 2rem 2rem;
+	background-position: center;
+}
+
+.shake {
+	animation-name: shake; /* Refers to the name of your @keyframes element below */
+	animation-duration: 2.5s; /* Change to speed up or slow down */
+	animation-iteration-count: infinite; /* Never stop waving :) */
+	transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+}
+
+@keyframes shake {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(12deg);
+	} /* The following five values can be played with to make the waving more or less extreme */
+	20% {
+		transform: rotate(-6deg);
+	}
+	30% {
+		transform: rotate(12deg);
+	}
+	40% {
+		transform: rotate(-2deg);
+	}
+	50% {
+		transform: rotate(8deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	} /* Reset for the last half to pause */
+	100% {
+		transform: rotate(0deg);
+	}
+}

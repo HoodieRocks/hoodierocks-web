@@ -2,31 +2,27 @@
 	export const prerender = true
 	
 	import Navigation from '$components/Navigation.svelte';
-	import '../app.css';
+	import "../app.postcss";
 	import { browser } from '$app/environment';
 
 	let scroll = 0;
-	let innerHeight = 0
-	let outerHeight = 0
+	let innerWidth = 0;
 </script>
 
 <svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&display=swap"
-		rel="stylesheet"
-	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&amp;display=swap" rel="stylesheet">
 </svelte:head>
 
-<svelte:window bind:scrollY={scroll} bind:innerHeight={innerHeight} bind:outerHeight={outerHeight} />
+<svelte:window bind:scrollY="{scroll}" bind:innerWidth={innerWidth}></svelte:window>
 
-{#if scroll > 200 || (browser && innerHeight < window.screen.height)}
-	<Navigation />
+{#if innerWidth < 768 || scroll > 200}
+	<Navigation></Navigation>
 {/if}
 
-<slot />
+<slot></slot>
 
 {#await import('$components/Footer.svelte') then Module}
-	<Module.default/>
+	<Module.default></Module.default>
 {/await}
