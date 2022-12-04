@@ -7,7 +7,6 @@
 	onMount(() => {
 		visible = !visible;
 	});
-
 </script>
 
 <svelte:head>
@@ -16,12 +15,14 @@
 		name="description"
 		content="Hi, my name is Indigo. No that's not my real name, it's an alias, I also go by Cobblestone. I am a frontend developer designing beautiful and featureful UIs like this one." />
 	<meta name="keywords" content="development dev indigo frontend developer" />
-	<meta property="og:title" content="Indigo Development | Home">
-	<meta property="og:description" content="Hi, my name is Indigo. No that's not my real name, it's an alias, I also go by Cobblestone. I am a frontend developer designing beautiful and featureful UIs like this one.">
-	<meta property="og:image" content="https://hoodierocks.github.io/indigo.png">
-	<meta property="og:url" content="https://hoodierocks.github.io/">
+	<meta property="og:title" content="Indigo Development | Home" />
+	<meta
+		property="og:description"
+		content="Hi, my name is Indigo. No that's not my real name, it's an alias, I also go by Cobblestone. I am a frontend developer designing beautiful and featureful UIs like this one." />
+	<meta property="og:image" content="https://hoodierocks.vercel.app/indigo.png" />
+	<meta property="og:url" content="https://hoodierocks.vercel.app/" />
 	<meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <main class="bg-neutral-800">
@@ -37,7 +38,9 @@
 				<img
 					src="waving-hand.webp"
 					alt="waving hand emoji"
-					class="h-[4.5rem] sm:h-24 md:h-32 lg:h-40 w-auto inline-block align-text-top z-2 shake"  height="72" width="72"/>
+					class="h-[4.5rem] sm:h-24 md:h-32 lg:h-40 w-auto inline-block align-text-top z-2 shake"
+					height="72"
+					width="72" />
 			</h1>
 			<p
 				class="font-light text-xl sm:text-2xl md:text-3xl text-white text-opacity-60 text-center z-20"
@@ -47,7 +50,7 @@
 		{/if}
 	</section>
 	{#if visible}
-	<div class="py-32"></div>
+		<div class="py-32" />
 		<h2
 			id="about"
 			class="text-3xl sm:text-4xl md:text-5xl text-indigo-400 font-bold m-auto w-1/2 mb-6 text-center sm:text-left scroll-m-64">

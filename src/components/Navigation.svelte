@@ -12,7 +12,7 @@
 	transition:slide={{ duration: 250 }}>
 	<div class="flex justify-between items-center h-auto transition-all">
 		<a href="/">
-			<img src="indigo.svg" alt="Indigo logo" class="h-8 cursor-pointer" />
+			<img src="indigo.svg" alt="Indigo logo" class="h-8 cursor-pointer" height="32" width="128"/>
 		</a>
 		<div class="flex flex-row justify-between items-center mr-4 w-auto md:w-1/3 lg:w-1/4 xl:w-1/5">
 			{#if width > 768}
@@ -28,29 +28,28 @@
 						src="terminal-solid.svg"
 						alt="terminal icon"
 						width="12"
+						height="12"
 						class="inline-block ml-2 invert" />
 				</a>
-				<button class="flex flex-col" on:click={() => {
-							showDropdown = !showDropdown;
-						}}
-						on:keydown={(code) => (code.key === 'n' ? (showDropdown = !showDropdown) : null)}>
-					<img
-						src="bars-solid.svg"
-						alt="bars"
-						class="ml-4 invert cursor-pointer"
-						width="24">
+				<button
+					class="flex flex-col"
+					on:click={() => {
+						showDropdown = !showDropdown;
+					}}
+					on:keydown={(code) => (code.key === 'n' ? (showDropdown = !showDropdown) : null)}>
+					<img src="bars-solid.svg" alt="bars" class="ml-4 invert cursor-pointer" width="24" height="24" />
 					{#if showDropdown}
 						<div class="absolute top-20 right-4 w-1/4 flex flex-col">
 							<a
 								href="/#about"
 								class="bg-neutral-800 text-neutral-200 p-1 border-2 border-white text-xs font-medium text-right"
-								transition:fly={{y: -20, delay: 0}}>
+								transition:fly={{ y: -20, delay: 0 }}>
 								About
 							</a>
 							<a
 								href="/contact"
 								class="bg-neutral-800 text-neutral-200 p-1 border-2 border-white text-xs font-medium text-right"
-								transition:fly={{y: -20, delay: 100}}>
+								transition:fly={{ y: -20, delay: 100 }}>
 								Contact Me
 							</a>
 						</div>

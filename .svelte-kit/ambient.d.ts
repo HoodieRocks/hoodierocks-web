@@ -56,7 +56,6 @@ declare module '$env/static/private' {
 	export const LOGONSERVER: string;
 	export const MinGW: string;
 	export const NODE: string;
-	export const NODE_ENV: string;
 	export const NODE_PATH: string;
 	export const npm_config_engine_strict: string;
 	export const npm_config_node_gyp: string;
@@ -207,7 +206,6 @@ declare module '$env/dynamic/private' {
 		LOGONSERVER: string;
 		MinGW: string;
 		NODE: string;
-		NODE_ENV: string;
 		NODE_PATH: string;
 		npm_config_engine_strict: string;
 		npm_config_node_gyp: string;
