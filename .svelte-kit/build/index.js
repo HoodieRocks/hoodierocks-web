@@ -1,19 +1,19 @@
 
 import root from '__GENERATED__/root.svelte';
-import { respond } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.0-next.571_svelte@3.53.1+vite@3.2.4/node_modules/@sveltejs/kit/src/runtime/server/index.js';
-import { set_paths, assets, base } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.0-next.571_svelte@3.53.1+vite@3.2.4/node_modules/@sveltejs/kit/src/runtime/paths.js';
-import { set_building, set_version } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.0-next.571_svelte@3.53.1+vite@3.2.4/node_modules/@sveltejs/kit/src/runtime/env.js';
-import { set_private_env } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.0-next.571_svelte@3.53.1+vite@3.2.4/node_modules/@sveltejs/kit/src/runtime/env-private.js';
-import { set_public_env } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.0-next.571_svelte@3.53.1+vite@3.2.4/node_modules/@sveltejs/kit/src/runtime/env-public.js';
+import { respond } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.1/node_modules/@sveltejs/kit/src/runtime/server/index.js';
+import { set_paths, assets, base } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.1/node_modules/@sveltejs/kit/src/runtime/paths.js';
+import { set_building, set_version } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.1/node_modules/@sveltejs/kit/src/runtime/env.js';
+import { set_private_env } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.1/node_modules/@sveltejs/kit/src/runtime/env-private.js';
+import { set_public_env } from '../../node_modules/.pnpm/@sveltejs+kit@1.0.1_svelte@3.55.0+vite@4.0.1/node_modules/@sveltejs/kit/src/runtime/env-public.js';
 
-const app_template = ({ head, body, assets, nonce }) => "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<link rel=\"icon\" href=\"" + assets + "/favicon.png\" />\n\t\t<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"" + assets + "/apple-touch-icon.png\">\n\t\t<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"" + assets + "/favicon-32x32.png\">\n\t\t<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"" + assets + "/favicon-16x16.png\">\n\t\t<link rel=\"manifest\" href=\"" + assets + "/site.webmanifest\">\n\t\t<link rel=\"mask-icon\" href=\"" + assets + "/safari-pinned-tab.svg\" color=\"#5bbad5\">\n\t\t<meta name=\"msapplication-TileColor\" content=\"#da532c\">\n\t\t<meta name=\"theme-color\" content=\"#ffffff\">\n\n\t\t<meta name=\"viewport\" content=\"width=device-width\" />\n\t\t" + head + "\n\t</head>\n\t<body data-sveltekit-preload-data=\"hover\">\n\t\t<div style=\"display: contents\">" + body + "</div>\n\t</body>\n</html>\n";
+const app_template = ({ head, body, assets, nonce }) => "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\" />\r\n\t\t<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"" + assets + "/apple-touch-icon.png\" />\r\n\t\t<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"" + assets + "/favicon-32x32.png\" />\r\n\t\t<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"" + assets + "/favicon-16x16.png\" />\r\n\t\t<link rel=\"manifest\" href=\"" + assets + "/site.webmanifest\" />\r\n\t\t<link rel=\"mask-icon\" href=\"" + assets + "/safari-pinned-tab.svg\" color=\"#5bbad5\" />\r\n\t\t<meta name=\"theme-color\" content=\"#4F46E5\" />\r\n\r\n\t\t<meta name=\"viewport\" content=\"width=device-width\" />\r\n\t\t" + head + "\r\n\t</head>\r\n\t<body data-sveltekit-preload-data=\"hover\">\r\n\t\t<div style=\"display: contents\">" + body + "</div>\r\n\t</body>\r\n</html>\r\n";
 
 const error_template = ({ status, message }) => "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<title>" + message + "</title>\n\n\t\t<style>\n\t\t\tbody {\n\t\t\t\tfont-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,\n\t\t\t\t\tUbuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n\t\t\t\tdisplay: flex;\n\t\t\t\talign-items: center;\n\t\t\t\tjustify-content: center;\n\t\t\t\theight: 100vh;\n\t\t\t}\n\n\t\t\t.error {\n\t\t\t\tdisplay: flex;\n\t\t\t\talign-items: center;\n\t\t\t\tmax-width: 32rem;\n\t\t\t\tmargin: 0 1rem;\n\t\t\t}\n\n\t\t\t.status {\n\t\t\t\tfont-weight: 200;\n\t\t\t\tfont-size: 3rem;\n\t\t\t\tline-height: 1;\n\t\t\t\tposition: relative;\n\t\t\t\ttop: -0.05rem;\n\t\t\t}\n\n\t\t\t.message {\n\t\t\t\tborder-left: 1px solid #ccc;\n\t\t\t\tpadding: 0 0 0 1rem;\n\t\t\t\tmargin: 0 0 0 1rem;\n\t\t\t\tmin-height: 2.5rem;\n\t\t\t\tdisplay: flex;\n\t\t\t\talign-items: center;\n\t\t\t}\n\n\t\t\t.message h1 {\n\t\t\t\tfont-weight: 400;\n\t\t\t\tfont-size: 1em;\n\t\t\t\tmargin: 0;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div class=\"error\">\n\t\t\t<span class=\"status\">" + status + "</span>\n\t\t\t<div class=\"message\">\n\t\t\t\t<h1>" + message + "</h1>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n";
 
 let read = null;
 
 set_paths({"base":"","assets":""});
-set_version("1670098480385");
+set_version("1671282638516");
 
 let default_protocol = 'https';
 
@@ -34,17 +34,11 @@ export class Server {
 				check_origin: true,
 			},
 			dev: false,
+			embedded: false,
 			handle_error: (error, event) => {
-				return this.options.hooks.handleError({
-					error,
-					event,
-
-					// TODO remove for 1.0
-					// @ts-expect-error
-					get request() {
-						throw new Error('request in handleError has been replaced with event. See https://github.com/sveltejs/kit/pull/3384 for details');
-					}
-				}) ?? { message: event.route.id != null ? 'Internal Error' : 'Not Found' };
+				return this.options.hooks.handleError({ error, event }) ?? {
+					message: event.route.id != null ? 'Internal Error' : 'Not Found'
+				};
 			},
 			hooks: null,
 			manifest,
@@ -56,7 +50,7 @@ export class Server {
 			app_template,
 			app_template_contains_nonce: false,
 			error_template,
-			version: "1670098480385"
+			version: "1671282638516"
 		};
 	}
 
@@ -79,11 +73,6 @@ export class Server {
 
 		if (!this.options.hooks) {
 			const module = await import("./hooks.js");
-
-			// TODO remove this for 1.0
-			if (module.externalFetch) {
-				throw new Error('externalFetch has been removed — use handleFetch instead. See https://github.com/sveltejs/kit/pull/6565 for details');
-			}
 
 			this.options.hooks = {
 				handle: module.handle || (({ event, resolve }) => resolve(event)),

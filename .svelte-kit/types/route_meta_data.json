@@ -3,18 +3,10 @@
 		"src/routes/+layout.ts",
 		"src/routes/+layout.ts"
 	],
-	"/coming-soon": [
-		"src/routes/+layout.ts"
-	],
-	"/(index)": [
-		"src/routes/(index)/+layout.ts",
-		"src/routes/(index)/+layout.ts"
-	],
-	"/notes": [],
-	"/creations": [
-		"src/routes/+layout.ts"
-	],
 	"/contact": [
+		"src/routes/+layout.ts"
+	],
+	"/creations": [
 		"src/routes/+layout.ts"
 	]
 }

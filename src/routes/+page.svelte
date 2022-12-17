@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { fly, fade } from 'svelte/transition';
+	import { fly, fade } from 'svelte-reduced-motion/transition';
+	import Saos from 'saos';
 
 	let visible = false;
 
@@ -25,7 +26,7 @@
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<main class="bg-neutral-800">
+<main class="bg-really-dark-purple">
 	<section class="w-full h-screen flex items-center justify-center flex-col">
 		{#if visible}
 			<div
@@ -38,7 +39,7 @@
 				<img
 					src="waving-hand.webp"
 					alt="waving hand emoji"
-					class="h-[4.5rem] sm:h-24 md:h-32 lg:h-40 w-auto inline-block align-text-top z-2 shake"
+					class="h-[4.5rem] sm:h-24 md:h-32 lg:h-40 w-auto inline-block align-text-top z-2 motion-safe:shake"
 					height="72"
 					width="72" />
 			</h1>
@@ -49,19 +50,44 @@
 			</p>
 		{/if}
 	</section>
-	{#if visible}
-		<div class="py-32" />
+
+	<div class="py-32" />
+	<Saos animation={'fly-in 500ms 300ms ease-out both'}>
 		<h2
 			id="about"
 			class="text-3xl sm:text-4xl md:text-5xl text-indigo-400 font-bold m-auto w-1/2 mb-6 text-center sm:text-left scroll-m-64">
 			About me
 		</h2>
-		<p
-			class="text-neutral-200 w-2/3 md:w-1/2 m-auto md:text-xl"
-			in:fly={{ x: 100, duration: 750, delay: 750 }}>
+		<p class="text-neutral-200 w-2/3 md:w-1/2 md:text-xl m-auto">
 			Hi, my name is Indigo. No that's not my real name, it's an alias, I also go by Cobblestone. I
 			am a frontend developer designing beautiful and featureful UIs like this one 🖥️.
 		</p>
-	{/if}
+	</Saos>
 	<div class="py-96" />
 </main>
+
+<style>
+	@keyframes -global-fly-in {
+		0% {
+			transform: translateX(4rem);
+			opacity: 0;
+		}
+		80% {
+			opacity: 1;
+		}
+		100% {
+			transform: translateX(0rem);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		@keyframes -global-fly-in {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+	}
+</style>

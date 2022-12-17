@@ -56,6 +56,7 @@ declare module '$env/static/private' {
 	export const LOGONSERVER: string;
 	export const MinGW: string;
 	export const NODE: string;
+	export const NODE_ENV: string;
 	export const NODE_PATH: string;
 	export const npm_config_engine_strict: string;
 	export const npm_config_node_gyp: string;
@@ -75,9 +76,11 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_postcss_load_config: string;
 	export const npm_package_devDependencies_prettier: string;
 	export const npm_package_devDependencies_prettier_plugin_svelte: string;
+	export const npm_package_devDependencies_saos: string;
 	export const npm_package_devDependencies_svelte: string;
 	export const npm_package_devDependencies_svelte_check: string;
 	export const npm_package_devDependencies_svelte_preprocess: string;
+	export const npm_package_devDependencies_svelte_reduced_motion: string;
 	export const npm_package_devDependencies_tailwindcss: string;
 	export const npm_package_devDependencies_tslib: string;
 	export const npm_package_devDependencies_typescript: string;
@@ -206,6 +209,7 @@ declare module '$env/dynamic/private' {
 		LOGONSERVER: string;
 		MinGW: string;
 		NODE: string;
+		NODE_ENV: string;
 		NODE_PATH: string;
 		npm_config_engine_strict: string;
 		npm_config_node_gyp: string;
@@ -225,9 +229,11 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_postcss_load_config: string;
 		npm_package_devDependencies_prettier: string;
 		npm_package_devDependencies_prettier_plugin_svelte: string;
+		npm_package_devDependencies_saos: string;
 		npm_package_devDependencies_svelte: string;
 		npm_package_devDependencies_svelte_check: string;
 		npm_package_devDependencies_svelte_preprocess: string;
+		npm_package_devDependencies_svelte_reduced_motion: string;
 		npm_package_devDependencies_tailwindcss: string;
 		npm_package_devDependencies_tslib: string;
 		npm_package_devDependencies_typescript: string;
