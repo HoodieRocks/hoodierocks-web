@@ -7,8 +7,8 @@
 	<meta name="keywords" content="development dev indigo frontend developer" />
 </svelte:head>
 
-<main class="bg-neutral-800">
+<main class="bg-really-dark-purple">
 	<section class="w-full h-screen flex items-center justify-center flex-col">
-		<p class="text-white text-9xl font-medium">Coming soon!</p>
+		<p class="text-white text-7xl font-medium">Coming soon!</p>
 	</section>
 </main>

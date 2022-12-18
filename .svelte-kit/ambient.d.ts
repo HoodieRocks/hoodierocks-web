@@ -150,6 +150,7 @@ declare module '$env/static/private' {
 	export const windir: string;
 	export const windows_tracing_flags: string;
 	export const windows_tracing_logfile: string;
+	export const __COMPAT_LAYER: string;
 }
 
 /**
@@ -303,6 +304,7 @@ declare module '$env/dynamic/private' {
 		windir: string;
 		windows_tracing_flags: string;
 		windows_tracing_logfile: string;
+		__COMPAT_LAYER: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: string]: string | undefined;
 	}
