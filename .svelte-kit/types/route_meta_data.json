@@ -1,16 +1,15 @@
 {
-	"/": [
-		"src/routes/+layout.ts",
-		"src/routes/+layout.ts"
+	"/(index)": [
+		"src/routes/(index)/+layout.ts",
+		"src/routes/(index)/+layout.ts"
 	],
-	"/(8ball)/8ball": [
-		"src/routes/+layout.ts",
-		"src/routes/+layout.ts"
+	"/(8ball)": [],
+	"/": [],
+	"/(8ball)/8ball": [],
+	"/(index)/contact": [
+		"src/routes/(index)/+layout.ts"
 	],
-	"/contact": [
-		"src/routes/+layout.ts"
-	],
-	"/creations": [
-		"src/routes/+layout.ts"
+	"/(index)/creations": [
+		"src/routes/(index)/+layout.ts"
 	]
 }

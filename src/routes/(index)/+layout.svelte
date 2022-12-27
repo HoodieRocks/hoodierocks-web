@@ -2,7 +2,7 @@
 	export const prerender = true;
 
 	import Navigation from '$components/Navigation.svelte';
-	import '../app.postcss';
+	import '../../app.postcss';
 
 	let scroll = 0;
 	let innerWidth = 0;
