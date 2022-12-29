@@ -24,6 +24,7 @@
 	<meta property="og:url" content="https://hoodierocks.vercel.app/" />
 	<meta property="og:type" content="website" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="theme-color" content="#4F46E5" />
 </svelte:head>
 
 <main class="bg-really-dark-purple">

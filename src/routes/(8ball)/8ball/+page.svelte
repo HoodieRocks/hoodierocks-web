@@ -14,19 +14,20 @@
 </script>
 
 <svelte:head>
-	<title>Indigo Development | Home</title>
+	<title>Indigo Development | ???</title>
 	<meta
 		name="description"
-		content="Hi, my name is Indigo. No that's not my real name, it's an alias, I also go by Cobblestone. I am a frontend developer designing beautiful and featureful UIs like this one." />
-	<meta name="keywords" content="development dev indigo frontend developer" />
-	<meta property="og:title" content="Indigo Development | Home" />
+		content="???" />
+	<meta name="keywords" content="eightball eight ball 8ball 8" />
+	<meta property="og:title" content="Indigo Development | ???" />
 	<meta
 		property="og:description"
-		content="Hi, my name is Indigo. No that's not my real name, it's an alias, I also go by Cobblestone. I am a frontend developer designing beautiful and featureful UIs like this one." />
+		content="???" />
 	<meta property="og:image" content="https://hoodierocks.vercel.app/indigo.png" />
 	<meta property="og:url" content="https://hoodierocks.vercel.app/" />
 	<meta property="og:type" content="website" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="theme-color" content="#FFFFFF" />
 </svelte:head>
 
 <main class="flex items-center justify-center w-full h-screen">
